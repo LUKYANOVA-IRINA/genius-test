@@ -3,33 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moderne Bäckerei</title>
+    <!-- <style>
+      h1 {
+        background-color: cadetblue;
+      }
+    </style> -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-         <a href="#">
-         <img src="./images/logo.svg" alt="Logo moderne Bäckerei">
-        </a> 
+        <a href="/">
+          <img src="./images/logo.svg" alt="Logo moderne Bäckerei" />
+        </a>
         <ul>
-          <li><a href="#" target="">Unsere Traditionen</a></li>
-          <li><a href="#" target="">Küchenchef</a></li>
-          <li><a href="#" target="">Formate</a></li>
-          <li><a href="#" target="">Kontakte</a></li>
+          <li>
+            <a class="link" href="#traditions-section">Unsere Traditionen</a>
+          </li>
+          <li><a class="link" href="#chefs-section">Küchenchef</a></li>
+          <li><a class="link" href="#format-section">Formate</a></li>
+          <li><a class="link" href="#contact-sektions">Kontakte</a></li>
         </ul>
       </nav>
-     <button type="button">Bestellen Sie einen Anruf</button>
+      <button class="button" type="button">Bestellen Sie einen Anruf</button>
     </header>
     <main>
-      <section><h1>Moderne Bäckerei</h1></section>
       <section>
-        <ul>
+        <h1 class="hero-title"><span class="accent">Moderne</span> Bäckerei</h1>
+      </section>
+      <section id="traditions-section">
+        <ul class="adventages-list">
           <li>Große Nachfrage am Markt</li>
           <li>Budgetfreundliche Formate</li>
           <li>Erfahrenes Managementteam</li>
         </ul>
-        <h2>Neues Format der Traditionen</h2>
+        <h2 class="section-title">Neues Format der Traditionen</h2>
         <p>
           <span>Ladenbäckerei</span> — ist eine Bäckerei, die das Beste genommen
           und den Geschmack des traditionellen Backens und die Natürlichkeit der
@@ -40,69 +50,100 @@
           <span>5 Minuten und die Bestellung ist fertig</span>. Und unsere
           Bäckereien haben ein stilvolles Design und erstklassiger Service!
         </p>
-        <img src="./images/Bäcker.jpg" alt="Der Bäcker betrachtet die Brote lächelnd">
+        <img
+          src="./images/Bäcker.jpg"
+          alt="Der Bäcker betrachtet die Brote lächelnd"
+        />
       </section>
-      <section>
-        <h2>Unsere besten Küchenchef</h2>
+      <section id="chefs-section">
+        <h2 class="section-title">
+          Unsere besten <span class="accent">Küchenchef</span>
+        </h2>
         <ul>
           <li>
             <article>
-          <h3>Nastja</h3>
-          <p>   Hallo, ich bin Nastya!</p>
-           <p>10 Jahren beleuchte ich interessante und
-            leckere Ideen im Leben.</p> 
-            <p>Ich werde für dich backen die leckersten
-            Produkte!</p>
-          </p>
-        </article>
+              <h3>Nastja</h3>
+              <p>Hallo, ich bin Nastya!</p>
+              <p>
+                10 Jahren beleuchte ich interessante und leckere Ideen im Leben.
+              </p>
+              <p>Ich werde für dich backen die leckersten Produkte!</p>
+            </article>
           </li>
           <li>
-<article>
-          <h3>Vlad</h3>
-          <p>Hallo, ich bin Vlad!</p>
-          <p> Ich habe 18 Jahre Programmiererfahrung. SHOP
-            BAKERY ist unsere Liebe, die wir jedes Mal durch unser Gebäck mit
-            Ihnen teilen!</p>
-            <p> Ich mache für Sie eine einzigartige Füllung für jeden
-            Geschmack!</p>          
-        </article>
+            <article>
+              <h3>Vlad</h3>
+              <p>Hallo, ich bin Vlad!</p>
+              <p>
+                Ich habe 18 Jahre Programmiererfahrung. SHOP BAKERY ist unsere
+                Liebe, die wir jedes Mal durch unser Gebäck mit Ihnen teilen!
+              </p>
+              <p>
+                Ich mache für Sie eine einzigartige Füllung für jeden Geschmack!
+              </p>
+            </article>
           </li>
-        </ul>        
+        </ul>
       </section>
-      <section>
-        <h2>Formate</h2>
+      <section id="format-section">
+        <h2 class="section-title">Formate</h2>
         <ul>
-          <li> <article><h3>Walross</h3></article></li>
-          <li><article><h3>HufeisenLenker</h3></article></li>
-          <li> <article><h3>Lenker</h3></article></li>
-        </ul>               
+          <li>
+            <article><h3>Walross</h3></article>
+          </li>
+          <li>
+            <article><h3>HufeisenLenker</h3></article>
+          </li>
+          <li>
+            <article><h3>Lenker</h3></article>
+          </li>
+        </ul>
       </section>
-      <section><h2>Treten Sie dem Bäckerei-Netzwerk bei</h2></section>
+      <section id="contact-sektions">
+        <h2 class="section-title">Treten Sie dem Bäckerei-Netzwerk bei</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.783427171101!2d7.33262077650233!3d51.49884167181134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b91ed8d760f487%3A0x7b3f5e455c1e8509!2sL%C3%BCtgendortmunder%20Str.%20146%2C%2044388%20Dortmund!5e0!3m2!1sde!2sde!4v1704489382790!5m2!1sde!2sde"
+          width="603"
+          height="595"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </main>
     <footer>
-      
       <nav>
         <a href="#">
-         <img src="./images/logo.svg" alt="Logo moderne Bäckerei">
-        </a>           
+          <img src="./images/logo.svg" alt="Logo moderne Bäckerei" />
+        </a>
         <ul>
-          <li><a href="#" target="">Unsere Traditionen</a></li>
-          <li><a href="#" target="">Küchenchef</a></li>
-          <li><a href="#" target="">Formate</a></li>
-          <li><a href="#" target="">Kontakte</a></li>
+          <li><a href="#">Unsere Traditionen</a></li>
+          <li><a href="#">Küchenchef</a></li>
+          <li><a href="#">Formate</a></li>
+          <li><a href="#">Kontakte</a></li>
         </ul>
       </nav>
       <address>
         <ul>
           <li><a href="tel:+490160000007">+ 49 (016) 000 00 07</a></li>
-          <li><a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-          <li><a href="https://maps.app.goo.gl/sDb6pDV4dakEUovP6">Deutschland Dortmund Lütgendortmunder Straße 146</a></li>
-          <li><a href="#">
-            <!-- facebook icon -->
-          </a></li>
-          <li><a href="#">
-            <!-- instagram icon -->
-          </a></li>
+          <li>
+            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/sDb6pDV4dakEUovP6"
+              >Deutschland Dortmund Lütgendortmunder Straße 146</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <!-- facebook icon -->
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <!-- instagram icon -->
+            </a>
+          </li>
         </ul>
         <a href="#" target="_blank">Datenschutzrichtlinie</a>
         <p>© 2024 Daten sind geschützt</p>
