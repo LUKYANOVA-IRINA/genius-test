@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moderne Bäckerei</title>
-    <!-- <style>
-      h1 {
-        background-color: cadetblue;
-      }
-    </style> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Indic+Siyaq+Numbers&family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -35,20 +37,21 @@
       </section>
       <section id="traditions-section">
         <ul class="adventages-list">
-          <li>Große Nachfrage am Markt</li>
-          <li>Budgetfreundliche Formate</li>
-          <li>Erfahrenes Managementteam</li>
+          <li class="adventages-item">Große Nachfrage am Markt</li>
+          <li class="adventages-item">Budgetfreundliche Formate</li>
+          <li class="adventages-item">Erfahrenes Managementteam</li>
         </ul>
         <h2 class="section-title">Neues Format der Traditionen</h2>
-        <p>
-          <span>Ladenbäckerei</span> — ist eine Bäckerei, die das Beste genommen
-          und den Geschmack des traditionellen Backens und die Natürlichkeit der
-          Zutaten bewahrt hat.
+        <p class="traditions-text">
+          <span class="brand uppercase">Ladenbäckerei</span> — ist eine
+          Bäckerei, die das Beste genommen und den Geschmack des traditionellen
+          Backens und die Natürlichkeit der Zutaten bewahrt hat.
         </p>
-        <p>
+        <p class="traditions-text">
           Wir arbeiten als die bekanntesten Netzwerke –
-          <span>5 Minuten und die Bestellung ist fertig</span>. Und unsere
-          Bäckereien haben ein stilvolles Design und erstklassiger Service!
+          <span class="brand">5 Minuten und die Bestellung ist fertig</span>.
+          Und unsere Bäckereien haben ein stilvolles Design und erstklassiger
+          Service!
         </p>
         <img
           src="./images/Bäcker.jpg"
@@ -62,7 +65,7 @@
         <ul>
           <li>
             <article>
-              <h3>Nastja</h3>
+              <h3 class="chefs-title">Nastja</h3>
               <p>Hallo, ich bin Nastya!</p>
               <p>
                 10 Jahren beleuchte ich interessante und leckere Ideen im Leben.
@@ -72,7 +75,7 @@
           </li>
           <li>
             <article>
-              <h3>Vlad</h3>
+              <h3 class="chefs-title">Vlad</h3>
               <p>Hallo, ich bin Vlad!</p>
               <p>
                 Ich habe 18 Jahre Programmiererfahrung. SHOP BAKERY ist unsere
@@ -89,18 +92,45 @@
         <h2 class="section-title">Formate</h2>
         <ul>
           <li>
-            <article><h3>Walross</h3></article>
+            <article>
+              <h3 class="format-title">Walross</h3>
+              <div class="format-text">
+                <p>Fläche: bis zu 120 m2</p>
+                <p>Menü: Erweitertes Menü</p>
+                <p>
+                  Personal: 2 Kassierer, 2 Bäcker, 2 Bäckergehilfen, 2 Kellner
+                </p>
+                <p>Sitzplätze: Es gibt</p>
+              </div>
+            </article>
           </li>
           <li>
-            <article><h3>HufeisenLenker</h3></article>
+            <article>
+              <h3 class="format-title">HufeisenLenker</h3>
+              <div class="format-text">
+                <p>Fläche: bis zu 25 m2</p>
+                <p>Menü: die beliebtesten Menüpunkte</p>
+                <p>Personal: 2 Kassierer, 2 Bäcker, 1 Bäckergehilfe</p>
+                <p>Sitzplätze: keine</p>
+              </div>
+            </article>
           </li>
           <li>
-            <article><h3>Lenker</h3></article>
+            <article>
+              <h3 class="format-title">Lenker</h3>
+              <div class="format-text">
+                <p>Fläche: bis zu 15 m2</p>
+                <p>Menü: die beliebtesten Menüpunkte</p>
+                <p>Personal: 1 Verkäufer, 1 Bäcker, 1 Bäckergehilfe</p>
+                <p>Sitzplätze: keine</p>
+              </div>
+            </article>
           </li>
         </ul>
       </section>
       <section id="contact-sektions">
         <h2 class="section-title">Treten Sie dem Bäckerei-Netzwerk bei</h2>
+        <p>Füllen Sie das Formular aus, damit wir Sie kontaktieren können!</p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.783427171101!2d7.33262077650233!3d51.49884167181134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b91ed8d760f487%3A0x7b3f5e455c1e8509!2sL%C3%BCtgendortmunder%20Str.%20146%2C%2044388%20Dortmund!5e0!3m2!1sde!2sde!4v1704489382790!5m2!1sde!2sde"
           width="603"
@@ -117,20 +147,28 @@
           <img src="./images/logo.svg" alt="Logo moderne Bäckerei" />
         </a>
         <ul>
-          <li><a href="#">Unsere Traditionen</a></li>
-          <li><a href="#">Küchenchef</a></li>
-          <li><a href="#">Formate</a></li>
-          <li><a href="#">Kontakte</a></li>
+          <li><a class="link" href="#">Unsere Traditionen</a></li>
+          <li><a class="link" href="#">Küchenchef</a></li>
+          <li><a class="link" href="#">Formate</a></li>
+          <li><a class="link" href="#">Kontakte</a></li>
         </ul>
       </nav>
       <address>
         <ul>
-          <li><a href="tel:+490160000007">+ 49 (016) 000 00 07</a></li>
           <li>
-            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            <a class="address-link" href="tel:+490160000007"
+              >+ 49 (016) 000 00 07</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/sDb6pDV4dakEUovP6"
+            <a class="address-link" href="mailto:shopbakery@gmail.com"
+              >shopbakery@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="address-link"
+              href="https://maps.app.goo.gl/sDb6pDV4dakEUovP6"
               >Deutschland Dortmund Lütgendortmunder Straße 146</a
             >
           </li>
@@ -145,8 +183,10 @@
             </a>
           </li>
         </ul>
-        <a href="#" target="_blank">Datenschutzrichtlinie</a>
-        <p>© 2024 Daten sind geschützt</p>
+        <a class="address-link" href="#" target="_blank"
+          >Datenschutzrichtlinie</a
+        >
+        <p class="address-copyright">© 2024 Daten sind geschützt</p>
       </address>
     </footer>
   </body>
