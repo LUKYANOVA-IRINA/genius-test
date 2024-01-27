@@ -15,73 +15,85 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="contener">
-        <nav>
-          <a href="/">
-            <img src="./images/logo.svg" alt="Logo moderne Bäckerei" />
-          </a>
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Unsere Traditionen</a>
-            </li>
-            <li><a class="link" href="#chefs-section">Küchenchef</a></li>
-            <li><a class="link" href="#format-section">Formate</a></li>
-            <li><a class="link" href="#contact-sektions">Kontakte</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Bestellen Sie einen Anruf</button>
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="/">
+              <img src="./images/logo.svg" alt="Logo moderne Bäckerei" />
+            </a>
+            <ul class="header-manu">
+              <li>
+                <a class="link" href="#traditions-section"
+                  >Unsere Traditionen</a
+                >
+              </li>
+              <li><a class="link" href="#chefs-section">Küchenchef</a></li>
+              <li><a class="link" href="#formats-section">Formate</a></li>
+              <li><a class="link" href="#contact-sektions">Kontakte</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">
+            Bestellen Sie einen Anruf
+          </button>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
-        <div class="contener">
+        <div class="container">
           <h1 class="hero-title">
             <span class="accent">Moderne</span> Bäckerei
           </h1>
         </div>
       </section>
-      <section>
-        <div class="contener">
+      <section class="advantages-section">
+        <div class="container">
           <h2 class="visually-hidden">Unsere Vorteile</h2>
-          <ul class="adventages-list">
-            <li class="adventages-item">Große Nachfrage am Markt</li>
-            <li class="adventages-item">Budgetfreundliche Formate</li>
-            <li class="adventages-item">Erfahrenes Managementteam</li>
+          <ul class="advantages-list">
+            <li class="advantages-item">Große Nachfrage am Markt</li>
+            <li class="advantages-item">Budgetfreundliche Formate</li>
+            <li class="advantages-item">Erfahrenes Managementteam</li>
           </ul>
         </div>
       </section>
       <section class="traditions-section section" id="traditions-section">
-        <div class="contener">
-          <h2 class="traditions-title section-title">
-            Neues Format der Traditionen
-          </h2>
-          <p class="traditions-text">
-            <span class="brand uppercase">Ladenbäckerei</span> — ist eine
-            Bäckerei, die das Beste genommen und den Geschmack des
-            traditionellen Backens und die Natürlichkeit der Zutaten bewahrt
-            hat.
-          </p>
-          <p class="traditions-text">
-            Wir arbeiten als die bekanntesten Netzwerke –
-            <span class="brand">5 Minuten und die Bestellung ist fertig</span>.
-            Und unsere Bäckereien haben ein stilvolles Design und erstklassiger
-            Service!
-          </p>
-          <img
-            src="./images/Bäcker.jpg"
-            alt="Der Bäcker betrachtet die Brote lächelnd"
-          />
+        <div class="container">
+          <div class="traditions-container">
+            <div class="traditions-content">
+              <h2 class="traditions-title section-title">
+                Neues Format der Traditionen
+              </h2>
+              <p class="traditions-text">
+                <span class="brand uppercase">Ladenbäckerei</span> — ist eine
+                Bäckerei, die das Beste genommen und den Geschmack des
+                traditionellen Backens und die Natürlichkeit der Zutaten bewahrt
+                hat.
+              </p>
+              <p class="traditions-text limited">
+                Wir arbeiten als die bekanntesten Netzwerke –
+                <span class="brand"
+                  >5 Minuten und die Bestellung ist fertig</span
+                >. Und unsere Bäckereien haben ein stilvolles Design und
+                erstklassiger Service!
+              </p>
+            </div>
+            <img
+              src="./images/Bäcker.jpg"
+              alt="Der Bäcker betrachtet die Brote lächelnd"
+            />
+          </div>
         </div>
       </section>
       <section class="section" id="chefs-section">
-        <div class="contener">
-          <h2 class="chefs-title section-title">
+        <div class="container">
+          <h2 class="chefs-title section-title centered">
             Unsere besten <span class="accent">Küchenchef</span>
           </h2>
           <ul>
             <li>
               <article>
+                <img class="chef-foto" src="./images/Nastja-chef.jpg" alt="Nastja-chef">
                 <h3 class="chef-title">Nastja</h3>
                 <p>Hallo, ich bin Nastya!</p>
                 <p>
@@ -93,6 +105,7 @@
             </li>
             <li>
               <article>
+                <img class="chef-foto" src="./images/Vlad-chef.jpg" alt="Vlad-chef">
                 <h3 class="chef-title">Vlad</h3>
                 <p>Hallo, ich bin Vlad!</p>
                 <p>
@@ -108,27 +121,26 @@
           </ul>
         </div>
       </section>
-      <section class="section" id="format-section">
-        <div class="contener">
-          <h2 class="formats-title section-title">Formate</h2>
-          <ul>
-            <li>
-              <article>
-                <h3 class="format-title">Walross</h3>
-                <div class="format-text">
+      <section class="section" id="formats-section">
+        <div class="container">
+          <h2 class="formats-title section-title centered">Formate</h2>
+          <ul class="formats-list">
+            <li class="formats-item">
+              <article class="formats-card">
+                <h3 class="formats-title">Walross</h3>
+                <div class="formats-text">
                   <p>Fläche: bis zu 120 m2</p>
                   <p>Menü: Erweitertes Menü</p>
-                  <p>
-                    Personal: 2 Kassierer, 2 Bäcker, 2 Bäckergehilfen, 2 Kellner
-                  </p>
+                  <p>Personal: 2 Kassierer, 2 Bäcker, 2 Bäckergehilfen,</p>
+                  <p>2 Kellner</p>
                   <p>Sitzplätze: Es gibt</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
-                <h3 class="format-title">HufeisenLenker</h3>
-                <div class="format-text">
+            <li class="formats-item">
+              <article class="formats-card">
+                <h3 class="formats-title">HufeisenLenker</h3>
+                <div class="formats-text">
                   <p>Fläche: bis zu 25 m2</p>
                   <p>Menü: die beliebtesten Menüpunkte</p>
                   <p>Personal: 2 Kassierer, 2 Bäcker, 1 Bäckergehilfe</p>
@@ -136,10 +148,32 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
-                <h3 class="format-title">Lenker</h3>
-                <div class="format-text">
+            <li class="formats-item">
+              <article class="formats-card">
+                <h3 class="formats-title">Lenker</h3>
+                <div class="formats-text">
+                  <p>Fläche: bis zu 15 m2</p>
+                  <p>Menü: die beliebtesten Menüpunkte</p>
+                  <p>Personal: 1 Verkäufer, 1 Bäcker, 1 Bäckergehilfe</p>
+                  <p>Sitzplätze: keine</p>
+                </div>
+              </article>
+            </li>
+            <li class="formats-item">
+              <article class="formats-card">
+                <h3 class="formats-title">Lenker</h3>
+                <div class="formats-text">
+                  <p>Fläche: bis zu 15 m2</p>
+                  <p>Menü: die beliebtesten Menüpunkte</p>
+                  <p>Personal: 1 Verkäufer, 1 Bäcker, 1 Bäckergehilfe</p>
+                  <p>Sitzplätze: keine</p>
+                </div>
+              </article>
+            </li>
+            <li class="formats-item">
+              <article class="formats-card">
+                <h3 class="formats-title">Lenker</h3>
+                <div class="formats-text">
                   <p>Fläche: bis zu 15 m2</p>
                   <p>Menü: die beliebtesten Menüpunkte</p>
                   <p>Personal: 1 Verkäufer, 1 Bäcker, 1 Bäckergehilfe</p>
@@ -151,7 +185,7 @@
         </div>
       </section>
       <section class="section" id="contact-sektions">
-        <div class="contener">
+        <div class="container">
           <h2 class="contact-title section-title">
             Treten Sie dem Bäckerei-Netzwerk bei
           </h2>
@@ -167,8 +201,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="contener">
+    <footer class="footer">
+      <div class="container">
         <nav>
           <a href="#">
             <img src="./images/logo.svg" alt="Logo moderne Bäckerei" />
