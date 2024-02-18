@@ -33,7 +33,7 @@
               <li><a class="link" href="#contact-sektion">Kontakte</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">
+          <button class="button modal-btn-open" type="button">
             Bestellen Sie einen Anruf
           </button>
         </div>
@@ -79,6 +79,7 @@
               </p>
             </div>
             <img
+              class="traditions-foto"
               src="./images/Bäcker.jpg"
               alt="Der Bäcker betrachtet die Brote lächelnd"
             />
@@ -88,7 +89,8 @@
       <section class="section" id="chefs-section">
         <div class="container">
           <h2 class="chefs-title section-title centered">
-            Unsere besten <span class="accent">Küchenchef</span>
+            Unsere besten <br />
+            <span class="accent">Küchenchef</span>
           </h2>
           <ul class="chefs-list">
             <li class="chefs-item">
@@ -181,7 +183,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -200,6 +202,57 @@
                 Füllen Sie das Formular aus, damit wir Sie kontaktieren können!
               </p>
               <!-- form -->
+              <form name="contackt-form" autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name"
+                    >Name</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-tel"
+                    >Telefon</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Telefon"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email"
+                    >E-Mail</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="E-Mail"
+                  />
+                </div>
+                <button class="form-button button" type="submit">
+                  Buchen Sie einen Anruf
+                </button>
+                <p class="form-terms">
+                  Ich klicke auf Ich stimme
+                  <a class="form-terms-link" href="#"
+                    >Datenschutzbestimmungen</a
+                  >
+                  zu.
+                </p>
+              </form>
             </div>
             <iframe
               class="contackt-map"
@@ -275,5 +328,67 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Schließen</button>
+        <h2>Buchen Sie einen Anruf</h2>
+        <p>
+          Hinterlassen Sie eine Anfrage und unser Spezialist wird Sie
+          kontaktieren.
+        </p>
+        <form name="modal-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name"
+              >Name</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Name"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel"
+              >Telefon</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Telefon"
+              required
+              pattern="^\+[0-9]{12}"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email"
+              >E-Mail</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="E-Mail"
+              required
+            />
+          </div>
+          <button class="form-button button" type="submit">
+            Buchen Sie einen Anruf
+          </button>
+          <p class="form-terms">
+            Ich klicke auf Ich stimme
+            <a class="form-terms-link" href="#">Datenschutzbestimmungen</a> zu.
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
